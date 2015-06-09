@@ -1,9 +1,14 @@
 {
   "name": "ng-fixed",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "An AngularJS directive that changes an element's position to fixed when scrolled to a given point",
   "keywords": [
     "ng-fixed",
+    "fixed",
+    "position",
+    "follow",
+    "floating",
+    "menu",
     "angularjs",
     "angular"
   ],
