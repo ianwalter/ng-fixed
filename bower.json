@@ -27,7 +27,7 @@
     "public",
     "src",
     "index.html",
-    "gulpfile.js",
+    "gulpfile.babel.js",
     "package.json"
   ],
   "dependencies": {
