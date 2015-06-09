@@ -1,7 +1,7 @@
 /**
- * Example application for ng-autocomplete (https://github.com/ianwalter/ng-autocomplete)
+ * Example application for ng-fixed (https://github.com/ianwalter/ng-fixed)
  *
- * @author Ian Kennington Walter (http://ianvonwalter.com)
+ * @author Ian Kennington Walter <ianwalter@fastmail.com>
  */
 requirejs.config({
   baseUrl: '.',
@@ -10,61 +10,22 @@ requirejs.config({
       '//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min',
       'public/lib/angular/angular'
     ],
-    'angular-route': [
-      '//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.min',
-      'public/lib/angular-route/angular-route.min'
-    ],
     'ng-fixed': [
       'dist/ng-fixed'
     ]
   },
   shim: {
-    'angular' : { 'exports' : 'angular' },
-    'angular-route': { deps:['angular'] },
-    'ng-fixed': { deps:['angular'] }
+    'angular' : { exports: 'angular' },
+    'ng-fixed': { deps: ['angular'] }
   }
 });
 
-require(['angular', 'angular-route', 'ng-fixed'], function(angular) {
-  "use strict";
+require(['angular', 'ng-fixed'], function(angular) {
+  'use strict';
 
-  var app = angular.module('menu-demo', ['ngRoute', 'ng-fixed'])
-    .config(['$routeProvider', function($routeProvider) {
-      $routeProvider
-        .when('/', { controller: 'HomeController', templateUrl: 'public/template/home.html', label: 'Home' })
-        .otherwise({ redirectTo: '/' });
-    }]);
-
-  app.controller('HomeController', [
-    '$scope',
-    function($scope) {
-      $scope.message  = 'Right click triggered';
-      $scope.closeMessage = 'Context menu closed';
-
-      $scope.panels = [
-        { name: 'Panel 1' },
-        { name: 'Panel 2' },
-        { name: 'Panel 3' }
-      ];
-
-      $scope.addPanel = function() {
-        $scope.panels.push({ name: 'Panel ' + ($scope.panels.length + 1) });
-      };
-
-      $scope.onRightClick = function(msg) {
-        console.log(msg);
-      };
-
-      $scope.onClose = function (msg) {
-        console.log(msg);
-      };
-
-      $scope.recreatePanels = function() {
-        $scope.panels = angular.copy($scope.panels);
-        console.log($scope.panels);
-      }
-    }
-  ]);
+  angular
+    .module('menu-demo', ['ng-fixed'])
+    .controller('HomeController', function() { });
 
   angular.bootstrap(document , ['menu-demo']);
 });

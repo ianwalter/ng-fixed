@@ -10,21 +10,15 @@
 
   <title>ng-fixed</title>
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://ianwalter.github.io/boyscout/dist/boyscout.min.css" />
   <link rel="stylesheet" href="http://ianwalter.github.io/flat-github-ribbon/dist/flat-github-ribbon.min.css" />
+
   <style>
-    .pointer {
-      cursor: pointer;
+    .top-30 {
+      top: 30px;
     }
-    .highlight {
-      color: #fff;
-      background-color: #3498db;
-    }
-    .expanded {
-      height: 400px;
-    }
-    .position-fixed {
-      position: fixed;
+    .width-320 {
+      width: 320px;
     }
   </style>
 
@@ -33,28 +27,101 @@
 <body>
 <div class="github-ribbon-container">
   <a href="http://github.com/ianwalter/ng-fixed/"
-     class="github-ribbon peter-river">Visit Me on GitHub!</a>
+     class="github-ribbon alizarin">Visit Me on GitHub!</a>
 </div>
 <br>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <header>
-        <h1>ng-fixed</h1>
-        <h4>
-          An AngularJS directive to display a context menu when a right-click event is triggered
-        </h4>
-      </header>
-      <br>
-      <div ng-view ng-cloak></div>
-    </div>
-  </div>
+<section class="container">
+  <header>
+    <section>
+      <h1 class="font-weight-800 color-pomegranate">ng-fixed</h1>
+    </section>
+    <br>
+    <section>
+      <div class="span-10 sm-span-12">
+        <div class="color-black">
+          An AngularJS directive that changes an element's position to fixed when
+          scrolled to a given point
+        </div>
+          <span class="color-concrete">
+            This page demos a common case for this directive. It's a navigation
+            menu that stayed pinned down and follows the user as they scroll
+            down the page. Go ahead an give it a shot. You'll se the menu
+            become fixed when you've scrolled down 200px.
+          </span>
+      </div>
+    </section>
+  </header>
   <br>
-  <p>
-    I hope you find this useful!<br>
-    «–– <a href="http://ianvonwalter.com">Ian</a>
+  <section>
+    <div class="span-4">
+      <div ng-fixed fixed-point="185" fixed-class="position-fixed top-30">
+        <a class="panel background-gallery background-alto-hover padding-10
+                margin-bottom-5 width-320"
+           href="#one">One</a>
+        <a class="panel background-gallery background-alto-hover padding-10
+                margin-bottom-5 width-320"
+           href="#two">Two</a>
+        <a class="panel background-gallery background-alto-hover padding-10
+                margin-bottom-5 width-320"
+           href="#three">Three</a>
+      </div>
+      <br>
+    </div>
+    <div class="span-8">
+      <a href="http://hipsum.co/">
+        <h2>Hipster Ipsum</h2>
+      </a>
+
+      <p>
+        Salvia fingerstache +1 Banksy mumblecore. Cold-pressed trust fund lumbersexual dreamcatcher, sriracha swag Neutra art party Pitchfork wayfarers street art drinking vinegar. Kickstarter authentic readymade retro. Farm-to-table Etsy shabby chic +1 before they sold out gentrify you probably haven't heard of them, tote bag semiotics PBR&B squid jean shorts. Mustache Banksy Odd Future, viral deep v mixtape artisan. Pork belly drinking vinegar art party brunch, fashion axe irony post-ironic. Letterpress cliche disrupt photo booth leggings.
+      </p>
+
+      <h3 id="one">One</h3>
+
+      <p>
+        Irony Truffaut sustainable raw denim artisan. Kale chips chambray gentrify next level Odd Future, meditation fanny pack brunch yr meh. Brunch occupy letterpress street art plaid you probably haven't heard of them. Wayfarers raw denim cred, next level American Apparel deep v DIY. Put a bird on it Shoreditch aesthetic fixie kitsch retro. Mixtape raw denim bespoke, retro flexitarian beard deep v artisan authentic 3 wolf moon normcore Bushwick single-origin coffee stumptown. Seitan listicle DIY, wayfarers four loko chia Carles scenester Wes Anderson YOLO hashtag health goth biodiesel gentrify.
+      </p>
+
+      <p>
+        Sriracha church-key wayfarers iPhone, umami artisan disrupt. Literally cred Odd Future freegan Neutra. Mlkshk stumptown Helvetica sriracha fingerstache. Flannel tofu wolf slow-carb plaid, direct trade mlkshk try-hard blog put a bird on it drinking vinegar Bushwick yr. Williamsburg Truffaut messenger bag, letterpress Kickstarter chambray Vice chia photo booth kitsch Blue Bottle skateboard organic deep v sriracha. Beard seitan fashion axe, trust fund freegan mlkshk pickled McSweeney's authentic 90's before they sold out lomo hashtag. Fixie selvage four dollar toast leggings tattooed, fashion axe four loko Neutra readymade.
+      </p>
+
+      <h3 id="two">Two</h3>
+
+      <p>
+        Typewriter 8-bit small batch, flannel cred Thundercats vegan polaroid. Roof party small batch ethical mustache blog try-hard, mumblecore church-key wolf. Artisan distillery PBR squid pork belly. Ugh wolf actually cold-pressed narwhal mustache kitsch plaid Pinterest Portland Neutra, DIY squid chia Wes Anderson. Slow-carb readymade kogi cliche, Marfa Kickstarter cornhole lo-fi hashtag DIY irony ugh sartorial. McSweeney's skateboard Portland cronut, chillwave meggings selvage small batch polaroid biodiesel try-hard. Before they sold out food truck listicle freegan, small batch yr meditation Truffaut cred Schlitz mustache cliche.
+      </p>
+
+      <p>
+        Post-ironic VHS Odd Future cray lo-fi, meh meggings aesthetic semiotics beard gentrify keytar cardigan Thundercats sustainable. Pickled hella gluten-free, umami twee aesthetic Pitchfork jean shorts bitters semiotics fashion axe flannel gentrify. Vegan yr cronut, try-hard meh fap tote bag High Life master cleanse paleo bespoke four loko meditation gentrify. Cold-pressed fap Williamsburg direct trade freegan 8-bit, Vice polaroid normcore asymmetrical retro PBR. Tattooed pug forage fashion axe, synth banh mi mlkshk mixtape distillery organic pork belly artisan. Shabby chic cliche banjo paleo synth irony. Deep v photo booth gluten-free beard quinoa, Thundercats biodiesel aesthetic tilde brunch.
+      </p>
+
+      <h3 id="three">Three</h3>
+
+      <p>
+        Sartorial scenester art party aesthetic, leggings raw denim irony distillery literally organic twee tote bag. Fanny pack meditation letterpress scenester bespoke, food truck biodiesel wolf health goth. American Apparel mustache 8-bit, narwhal roof party meditation pickled Pitchfork Blue Bottle. Banksy you probably haven't heard of them bitters bicycle rights authentic kogi. Pitchfork wayfarers Banksy Tumblr, YOLO ugh fanny pack synth four dollar toast bespoke Truffaut Carles. Drinking vinegar Godard dreamcatcher fingerstache tousled small batch bicycle rights PBR&B. Banjo Wes Anderson Banksy distillery Tumblr authentic, Echo Park master cleanse ethical heirloom Truffaut.
+      </p>
+
+      <p>
+        Cred hoodie asymmetrical Banksy swag, Godard plaid twee crucifix freegan. Fixie mustache keytar, Truffaut PBR biodiesel 3 wolf moon tattooed taxidermy PBR&B Banksy Neutra lumbersexual. Kogi ethical distillery food truck craft beer, irony occupy Portland Pinterest. Blog polaroid mixtape, put a bird on it art party kitsch fap kale chips single-origin coffee next level. Ethical keffiyeh Wes Anderson chambray ugh skateboard. Sriracha Godard letterpress selvage distillery, keffiyeh gentrify tofu irony Truffaut jean shorts actually before they sold out. Keffiyeh ethical blog, +1 try-hard gastropub chia polaroid Pinterest Tumblr heirloom umami.
+      </p>
+
+      <p>
+        Marfa quinoa fixie, swag craft beer you probably haven't heard of them banh mi mixtape YOLO bespoke. Pour-over next level gentrify deep v Bushwick, asymmetrical ethical quinoa. Pinterest vinyl keytar authentic, synth Wes Anderson leggings. Narwhal before they sold out trust fund, Shoreditch art party Blue Bottle cred sriracha crucifix typewriter Brooklyn put a bird on it. Butcher plaid Carles, Bushwick health goth cold-pressed kitsch post-ironic chambray hashtag pug typewriter gentrify. Banjo PBR&B cliche, Austin forage aesthetic umami gastropub flannel roof party seitan. PBR&B swag chambray cray, Truffaut wolf lumbersexual tilde gentrify bespoke church-key cardigan try-hard.
+      </p>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <p class="align-center">
+    <small>I hope you find this useful!</small><br>
+    <a href="http://iankwalter.com">
+      <small>&#9875;</small>
+      <span class="font-weight-800 font-size-0-9">Ian Walter</span>
+    </a>
   </p>
   <br>
-</div>
+</section>
 </body>
 </html>

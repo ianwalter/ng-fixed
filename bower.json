@@ -1,16 +1,14 @@
 {
   "name": "ng-fixed",
-  "version": "1.0.2",
-  "description": "An AngularJS directive to display a context menu when a right-click event is triggered",
+  "version": "0.0.1",
+  "description": "An AngularJS directive that changes an element's position to fixed when scrolled to a given point",
   "keywords": [
     "ng-fixed",
-    "context menu",
-    "right click",
     "angularjs",
     "angular"
   ],
   "authors": [
-    "Ian Kennington Walter (http://ianvonwalter.com)"
+    "Ian Kennington Walter <ianwalter@fastmail.com>"
   ],
   "license": "MIT",
   "homepage": "http://ianwalter.github.io/ng-fixed/",
