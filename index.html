@@ -46,15 +46,19 @@
             This page demos a common case for this directive. It's a navigation
             menu that stayed pinned down and follows the user as they scroll
             down the page. Go ahead an give it a shot. You'll se the menu
-            become fixed when you've scrolled down 200px.
+            become fixed when you've scrolled down ~185px.
           </span>
       </div>
     </section>
   </header>
-  <br>
+  <br id="fixed-trigger">
   <section>
     <div class="span-4">
-      <div ng-fixed fixed-point="185" fixed-class="position-fixed top-30">
+      <div class="position-absolute"
+           ng-fixed
+           fixed-element-selector="#fixed-trigger"
+           fixed-class="position-fixed top-30"
+           unfixed-element-selector="footer">
         <a class="panel background-gallery background-alto-hover padding-10
                 margin-bottom-5 width-320"
            href="#one">One</a>
@@ -111,16 +115,17 @@
       </p>
     </div>
   </section>
-  <br>
-  <hr>
-  <br>
-  <p class="align-center">
-    <small>I hope you find this useful!</small><br>
-    <a href="http://iankwalter.com">
-      <small>&#9875;</small>
-      <span class="font-weight-800 font-size-0-9">Ian Walter</span>
-    </a>
-  </p>
+  <footer class="padding-vertical-20">
+    <hr>
+    <br>
+    <p class="align-center">
+      <small>I hope you find this useful!</small><br>
+      <a href="http://iankwalter.com">
+        <small>&#9875;</small>
+        <span class="font-weight-800 font-size-0-9">Ian Walter</span>
+      </a>
+    </p>
+  </footer>
   <br>
 </section>
 </body>
